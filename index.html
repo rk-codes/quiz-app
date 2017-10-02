@@ -25,22 +25,24 @@
 		  <div class="quiz-section">
 		 	  <form class="questions-form">
 				  <p></p>
-				  <label class="options">
-				    <input  id="option-one" type="radio" name="option-one">
-				    <span></span>
-				  </label>
-				   <label class="options">
-				    <input id="option-two" type="radio" name="option-one">
-				    <span></span>
-				  </label>
-				   <label class="options">
-				    <input id="option-three" type="radio" name="option-one">
-				    <span></span>
-				  </label>
-				   <label class="options">
-				    <input id="option-four" type="radio" name="option-one">
-				    <span></span>
-				  </label>
+				  <div role="radiogroup" aria-label="choices">
+				  	<label class="options">
+				    	<input  id="option-one" type="radio" name="option-one">
+				    	<span></span>
+				  	</label>
+				   	<label class="options">
+				    	<input id="option-two" type="radio" name="option-one">
+				    	<span></span>
+				  	</label>
+				   	<label class="options">
+				   		 <input id="option-three" type="radio" name="option-one">
+				   		 <span></span>
+				  	</label>
+				  	<label class="options">
+				   		 <input id="option-four" type="radio" name="option-one">
+				    	 <span></span>
+				  	</label>
+				   </div>
 				  <input type="button" value="Submit Answer" class="submit-button js-submit-button">
 			  </form>	
 			</div>
@@ -49,7 +51,7 @@
       <section class="feedback-section">
         <div class="popup-box">
           <button type="button" class="close-button js-close-button">X</button>
-          <img src="" class="feedback-icon">
+          <img src="" class="feedback-icon" alt="icon showing answer right or wrong">
           <span id="popup-text"></span>
         </div>
       </section>
@@ -57,11 +59,11 @@
 		  <section class="end-section">
 		  	<h4></h4>
 		  	<div class="correct">
-		  	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7HVtoF91KK85ZKPlBL0wzdW8URDpziD2PRsFZm4awGyD2BS-" alt="correct-icon">
+		  	  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7HVtoF91KK85ZKPlBL0wzdW8URDpziD2PRsFZm4awGyD2BS-" alt="green tick for correct answer">
 		  	  <span class="count"></span>
 		  	 </div>
 		  	 <div class="wrong">
-		  	   	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGk_AHvtphypbgsJNN6qI1qX7v1b2vRXBgLwgGMcSZ95oZqaqug" alt="wrong-icon">
+		  	   	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGk_AHvtphypbgsJNN6qI1qX7v1b2vRXBgLwgGMcSZ95oZqaqug" alt="red cross for wrong answer">
 		    	  <span class="count"></span>
 		  	 </div>
 		     <input type="button" class="startover-button js-startover-button" value="Start Over">
